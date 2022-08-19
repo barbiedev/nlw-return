@@ -1,5 +1,5 @@
 window.addEventListener('scroll', onScroll)
-
+showNavOnScroll()
 onScroll()
 function onScroll() {
     showNavOnScroll()
@@ -12,6 +12,13 @@ function onScroll() {
 
 
 
+}
+function showNavOnScroll() {
+    if (scrollY > 0) {
+        navi.classList.add('scroll')
+    } else {
+        navi.classList.remove('scroll')
+    }
 }
 
 function activateMenuAtCurrentSection(section) {
@@ -49,13 +56,8 @@ function activateMenuAtCurrentSection(section) {
     }
 
 }
-function showNavOnScroll() {
-    if (scrollY > 0) {
-        navi.classList.add('scroll')
-    } else {
-        navi.classList.remove('scroll')
-    }
-}
+
+
 function showBackToTopButtonOnScroll() {
     if (scrollY > 550) {
         backToTopButton.classList.add('show')
