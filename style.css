@@ -158,7 +158,7 @@ nav.scroll {
   background: var(--primary-color);
 }
 nav.scroll .logo path {
-  fill: white;
+  fill: white !important;
 }
 
 nav.scroll button path {
