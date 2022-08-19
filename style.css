@@ -259,7 +259,8 @@ body.menu-expanded nav button {
   z-index: 100;
 }
 body.menu-expanded .logo path {
-  fill: white !important;
+  fill: white !important ;
+
 }
 body.menu-expanded button path {
   stroke: white;
